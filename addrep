@@ -1,0 +1,12 @@
+#!/bin/bash
+#Script to add ppa and install a program from it
+#Script by vazzup
+echo "Adding ppa" $1"..."
+sudo add-apt-repository $1
+echo "Repository added..."
+echo "Updating..."
+sudo apt-get update
+echo "Updated..."
+echo "Installing program..."
+sudo apt-get install $2
+echo "Installation done"
