@@ -1,0 +1,16 @@
+#!/bin/bash
+#Script to prepare for Codeforces Round
+echo "Creating Directory..."
+mkdir -p /home/vazzup/CodeForces/Round\ $1
+echo "Directory Created..."
+echo "Moving to directory..."
+cd /home/vazzup/CodeForces/Round\ $1
+echo "Creating Files..."
+touch A.cpp
+touch B.cpp
+touch C.cpp
+touch D.cpp
+touch E.cpp
+echo "Files Created..."
+echo "Opening A.cpp in vi..."
+vi A.cpp
