@@ -1,2 +1,4 @@
+#databases
+*.db
 #test files
 check
