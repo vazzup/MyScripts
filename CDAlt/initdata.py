@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import os, sys
 import sqlite3 as sql
 
@@ -19,19 +21,17 @@ for root, dirs, files in os.walk(os.path.expanduser("~"), topdown=True):
     for name in dirs:
         path = os.path.join(root, name)
         realpath = ""
-        flag =  False
         for i in path:
             if i == " ":
                 realpath+="\\"
-                flag = True
             realpath+=i
-        if flag:
+        if name == "Machine Learning":
             print(realpath, name)
         cursor.execute("""SELECT dirPath FROM Directories WHERE dirPath IS (?)""", (realpath, ))
         ans = ""
         for row in cursor:
             ans = row[0]
-        if ans != path:
+        if ans != realpath:
             cursor.execute("""INSERT INTO Directories values(?,?,?)""",(key, name, realpath))
             key+=1
 print(key - original, "directories added...")
