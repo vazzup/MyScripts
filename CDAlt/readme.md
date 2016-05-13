@@ -17,6 +17,7 @@ Note: The script opens a new terminal at the mentioned directory. If you've adde
 </ol>
 ##Additional Instructions:
 <ol>
+<li>Reboot after changing the path and running the initdata.py script!</li>
 <li>If there are multiple directories of the same name, It'll ask to enter ID of required directory from given options.<br></li>
 <li>Directory names with spaces can be passed with:<br>
 <code>$goto "Directory Name"</code><br>
