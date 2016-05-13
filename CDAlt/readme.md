@@ -9,15 +9,15 @@ Note: The script opens a new terminal at the mentioned directory. If you've adde
 <li>Run initdata.py:<br>
 <code>$python3 initdata.py</code><br></li>
 <li>Append the path of the project folder to PATH variable in /etc/environment:<br>
-<code>PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:PATH/TO/PROJECT/DIRECTORY"</code></li>
 <code>$sudo gedit /etc/environment</code><br></li>
+<code>PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:PATH/TO/PROJECT/DIRECTORY"</code></li>
 <li>Run it!<br>
 <code>$goto NameOfFolder</code><br></li>
 <li>You're good to go!</li>
 </ol>
 ##Additional Instructions:
 <ol>
-<li>If there are multiple directories of the same name, It'll ask to enter ID of required directory from given optiond.<br></li>
+<li>If there are multiple directories of the same name, It'll ask to enter ID of required directory from given options.<br></li>
 <li>Directory names with spaces can be passed with:<br>
 <code>$goto "Directory Name"</code><br>
 OR<br>
