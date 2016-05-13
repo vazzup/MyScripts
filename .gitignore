@@ -2,3 +2,5 @@
 *.db
 #test files
 check
+#vim swap files
+*.swp
