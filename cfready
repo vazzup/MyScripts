@@ -6,16 +6,17 @@ echo "Directory Created..."
 echo "Moving to directory..."
 cd /home/vazzup/CodeForces/Round\ $1
 echo "Creating Files..."
+cp ../Makefile Makefile
 cp ../template.cpp A.cpp
 cp ../template.cpp B.cpp
 cp ../template.cpp C.cpp
 cp ../template.cpp D.cpp
 cp ../template.cpp E.cpp
-sudo chmod 700 A.cpp
-sudo chmod 700 B.cpp
-sudo chmod 700 C.cpp
-sudo chmod 700 D.cpp
-sudo chmod 700 E.cpp
+chmod 700 A.cpp
+chmod 700 B.cpp
+chmod 700 C.cpp
+chmod 700 D.cpp
+chmod 700 E.cpp
 echo "Files Created..."
 echo "Opening A.cpp in vi..."
 vi A.cpp
